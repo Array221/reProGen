@@ -1,22 +1,16 @@
 _minted*/
 
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
-*.synctex.gz
+*
 
-code/*.*
-!code/README.md
-code/out/*
-!code/out/README.md
+!*.tex
+!*.md
+!clean.sh
+!LICENSE
+!example/exampleOutput.pdf
+!example/variables.tex
 
 tasks/*
 !tasks/README.md
 !tasks/example.tex
 
 variables.tex
-!example/variables.tex
-
-*.pdf
-!example/exampleOutput.pdf
