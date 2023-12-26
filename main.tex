@@ -1,0 +1,25 @@
+% === PREAMBLE ===
+\documentclass{article}
+\usepackage{polski}
+\usepackage[document]{ragged2e}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[default]{cantarell}
+\usepackage{inconsolata}
+\usepackage[T1]{fontenc}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+\usepackage{minted}
+\usepackage{pgffor}
+\usepackage{filecontents}
+
+% === DOCUMENT ===
+\begin{document}
+\include{variables.tex}
+\include{partials/titlePage.tex}
+\foreach \i in {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ..., 99}{%
+    \edef\FileName{tasks/\i.tex}%
+    \IfFileExists{\FileName}{%
+        \input{\FileName}%
+    }
+}
+\end{document}
