@@ -18,7 +18,7 @@ Automatic report generator for programming classes.
 Output pdf file should be named **main.pdf**.
 
 ## How it looks like?
-Example output file can be found in **example** directory.
+[Example output file](./example/exampleOutput.pdf) can be found in **example** directory.
 
 ## Cleaning script
 On Linux you can run **clean.sh** script to remove all junk that MiKTeX has created:
